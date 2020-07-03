@@ -1,65 +1,207 @@
-@media (max-width: 670px) {
-  .nav-list{
-      position: fixed;
-      top: 0;
-      left: 0;
-      display: none;
-      flex-direction: column;
-      align-items: initial;
-      background-color: #191919;
-      z-index: 1000;
-  }
+@media screen and (max-width: 670px) {
 
-  .nav-list > li{
-      line-height: 60px;
-  }
+    
+    .nav-list{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        display: none;
+        flex-direction: column;
+        align-items: initial;
+        background-color: #191919;
+        z-index: 1000;
+    }
 
-  .logo {
-    width: 40px;
-    height: 40px;
-  }
+    .nav-list > li{
+        line-height: 6rem;
+    }
 
-  .sub-service{
-      position: initial;
-      border: 3px solid transparent;
-      border-left-color: #eb3007;
-      margin-left: 10px;
-      max-height: 0;
-  }
+    .sub-service{
+        position: initial;
+        border: 3px solid transparent;
+        border-left-color: #eb3007;
+        margin-left: 1rem;
+        max-height: 0;
+    }
 
-  .sub-service::before{
-      display: none;
-  }
 
-  .nav-list li:hover > .sub-service{
-      opacity: 1;
-      visibility: visible;
-      max-height: initial;
-  }
+    .sub-service::before{
+        display: none;
+    }
 
-  li.move-right{
-      margin: 0 auto 0 0;
-      line-height: initial;
-  }
+    .nav-list li:hover > .sub-service{
+        opacity: 1;
+        visibility: visible;
+        max-height: initial;
+    }
 
-  .menu-icons{
-      display: block;
-  }
+    li.move-right{
+        margin: 0 auto 0 0;
+        line-height: initial;
+    }
 
-  .ion-md-close{
-      display: none;
-  }
+    .menu-icons{
+        display: block;
+    }
 
-  nav.active .ion-md-close{
-      display: block;
-  }
+    .ion-md-close{
+        display: none;
+    }
 
-  nav.active .ion-md-menu{
-      display: none;
-  }
+    nav.active .ion-md-close{
+        display: block;
+    }
 
-  nav.active .nav-list{
-      display: flex;
-  }
+    nav.active .ion-md-menu{
+        display: none;
+    }
+
+    nav.active .nav-list{
+        display: flex;
+    }
+    *,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 200rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    background-color: black;
+}
+
+.container img {
+    display: flex;
+    float: left;
+  }
+
+
+.btn{
+    padding: 0.5rem;
+    display: inline-block;
+    background-color: #eb3007;
+    border: 2px solid #eb3007;
+    border-radius: 5rem;
+    transition: background-color 650ms;
+    font-size: 10px;
+}
+
+.btn:hover{
+    color: #eb3007;
+    background-color: rgba(0,0,0,.2);
+}
+
+.sub-service{
+    width: 20rem;
+    display: block;
+    position: absolute;
+    border-top: 3px solid #eb3007;
+    background-color: #191919;
+    z-index: 100;
+    top: 16rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 605ms ease;
+}
+
+.sub-service::before{
+    content:"";
+    position: absolute;
+    top: -2.5rem;
+    left: 3rem;
+    border: 1.2rem solid transparent;
+    border-bottom-color: #eb3007;
+}
+
+.sub-service .sub-service::before{
+    top: .9rem;
+    left: -2.5rem;
+    border: 1.2rem solid transparent;
+    border-right-color: #eb3007;
+}
+
+.sub-service .sub-service{
+    border-top: none;
+    border-left: 3px solid #eb3007;
+    top: 0;
+    left: 160%;
+}
+
+.nav-list li:hover > .sub-service{
+    top: 8rem;
+    opacity: 1;
+    visibility: visible;
+}
+
+.sub-service li:hover > .sub-service{
+    top: 0;
+    left: 100%;
+}
+
+.top-wrapper h1 {
+    opacity: 0.7;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-bottom: 60px;
+    position: absolute;
+    top: 70px;
+    right: 16px;
+    text-align: right;
+    font-family: "Lucida Console", Monaco, monospace;
+    text-shadow: 2px 2px 5px aqua;
+  }
+  
+  .top-wrapper h2 {
+    opacity: 0.7;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-bottom: 60px;
+    position: absolute;
+    top: 100px;
+    right: 16px;
+    text-align: right;
+    font-family: "Lucida Console", Monaco, monospace;
+    text-shadow: 2px 2px 5px aqua;
+  }
+  
+  .top-wrapper p {
+    opacity: 0.7;
+    font-size: 12px;
+    position: absolute;
+    top: 150px;
+    right: 16px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: right;
+  }
+
+}

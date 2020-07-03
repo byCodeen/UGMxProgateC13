@@ -19,7 +19,7 @@ header{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(82, 82, 82, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     font-weight: 700;
     position: fixed;
     z-index: 10;
@@ -56,9 +56,7 @@ nav{
 .logo {
     width: 45px;
     height: 40px;
-    background-color: #eb3007;
     display: flex;
-    border-radius: 100%;
     margin-right: 50px;
 }
 
@@ -452,7 +450,7 @@ li {
   color: #bebdbd;
   margin-bottom: 10px;
   line-height: 1.5rem;
-  padding: .7rem 1.8rem;
+
 }
 
 .footer-bottom {
@@ -468,4 +466,19 @@ li {
 
 .footer-bottom p {
   padding-top: 10px;
+}
+
+.btn{
+  padding: 0.45rem;
+  display: inline-block;
+  background-color: #eb3007;
+  border: 2px solid #eb3007;
+  border-radius: 5rem;
+  transition: background-color 650ms;
+  font-size: 10px;
+}
+
+.btn:hover{
+  color: #eb3007;
+  background-color: rgba(0,0,0,.2);
 }
