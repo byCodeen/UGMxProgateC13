@@ -441,7 +441,7 @@ li {
 
 .footer .footer-content .contact-form .socials a:hover {
   border: 1px solid white;
-  color: white
+  color: white;
   transition: all .3s;
 }
 
