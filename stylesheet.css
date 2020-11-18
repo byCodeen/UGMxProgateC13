@@ -1,484 +1,205 @@
-/* CSS Header by Febri*/
-
-
-html{
-    font-family: 'Roboto', sans-serif;
+/* Reset CSS (DO NOT DELETE) */
+html,
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+  margin: 0;
+  padding: 0;
 }
 
-
-a{
-    text-decoration: none;
-}
-
-ul{
-    list-style: none;
-}
-
-header{
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    font-weight: 700;
-    position: fixed;
-    z-index: 10;
-}
-
-.container {
-    width: 100%;
-    max-width: 1170px;
-    margin: 0 auto;
-    padding: 0 15px;
-    
-}
-
-.menu-icons{
-    color: #eee;
-    font-size: 40px;
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-    cursor: pointer;
-    z-index: 1500;
-    display: none;
-}
-
-nav{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 50px;
-    border-bottom: 1px solid rgba(255,255,255, .1);
-}
-
-.logo {
-    width: 45px;
-    height: 40px;
-    display: flex;
-    margin-right: 50px;
-}
-
-.logo i{
-    margin: auto;
-    font-size: 30px;
-    color: #eee;
-}
-
-.nav-list{
-    display: flex;
-    width: 100%;
-    align-items: center;
-}
-
-.nav-list li {
-    line-height: 80px;
-    position: relative;
-}
-
-.sub-service li{
-    line-height:  40px;
-}
-
-.nav-list a{
-    display: block;
-    color: #eee;
-    padding: 0 15px;
-    font-size: 14px;
-    text-transform: uppercase;
-    transition: color 650ms;
-}
-
-.nav-list a:hover{
-    color: #eb3007;
-}
-
-.btn{
-    padding: 13px;
-    display: inline-block;
-    background-color: #eb3007;
-    border: 2px solid #eb3007;
-    border-radius: 50px;
-    transition: background-color 650ms;
-}
-
-.btn:hover{
-    color: #eb3007;
-    background-color: rgba(0,0,0,.2);
-}
-
-.sub-service{
-    width: 200px;
-    display: block;
-    position: absolute;
-    border-top: 3px solid #eb3007;
-    background-color: #191919;
-    z-index: 100;
-    top: 160px;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 605ms ease;
-}
-
-.sub-service::before{
-    content:"";
-    position: absolute;
-    top: -25px;
-    left: 30px;
-    border: 12px solid transparent;
-    border-bottom-color: #eb3007;
-}
-
-.sub-service .sub-service::before{
-    top: .9rem;
-    left: -25px;
-    border: 12px solid transparent;
-    border-right-color: #eb3007;
-}
-
-.sub-service .sub-service{
-    border-top: none;
-    border-left: 3px solid #eb3007;
-    top: 0;
-    left: 160%;
-}
-
-.nav-list li:hover > .sub-service{
-    top: 80px;
-    opacity: 1;
-    visibility: visible;
-}
-
-.sub-service li:hover > .sub-service{
-    top: 0;
-    left: 100%;
-}
-
-li.move-right{
-    margin: auto 0 auto auto;
-    line-height: initial;
-
-}
-
-
-
-/* CSS Main by Zulvan*/
 body {
-  background-color: #f7f7f7;
-  margin: 0px;
+  margin: 0;
+  font-family: "Lucida Grande";
 }
 
-.foto {
-  border-radius: 50%;
-}
-
-img {
-  height: 180px;
-  width: 180px;
-  vertical-align: middle;
-  float: left;
-  display: block;
-  margin-right: 20px;
-  padding: 10px;
+a {
+  text-decoration: none;
 }
 
 .container {
-  width: 100%;
-  height: 100%;
+  width: 1170px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
 .top-wrapper {
   padding: 180px 0 100px 0;
-  background-image: url(https://media-exp1.licdn.com/dms/image/C561BAQGpxRlo9gp3cQ/company-background_10000/0?e=2159024400&v=beta&t=TrelGvVGOofaPX-01588Ei8BJf0_8taYBiGFlk9zyME);
+  background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
   background-size: cover;
   color: white;
   text-align: center;
-  height: 40px;
-}
-
-.isi-utama {
-  height: 1100px;
-  padding-top: 1px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 1px;
-}
-
-.isi-utama p {
-  margin-right: 15px;
 }
 
 .top-wrapper h1 {
   opacity: 0.7;
   font-size: 45px;
-  letter-spacing: 2px;
-  margin-bottom: 60px;
-  position: absolute;
-  top: 70px;
-  right: 16px;
-  text-align: right;
-  font-family: "Lucida Console", Monaco, monospace;
-  text-shadow: 2px 2px 5px aqua;
-}
-
-.top-wrapper h2 {
-  opacity: 0.7;
-  font-size: 45px;
-  letter-spacing: 2px;
-  margin-bottom: 60px;
-  position: absolute;
-  top: 120px;
-  right: 16px;
-  text-align: right;
-  font-family: "Lucida Console", Monaco, monospace;
-  text-shadow: 2px 2px 5px aqua;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
 }
 
 .top-wrapper p {
   opacity: 0.7;
-  font-size: 20px;
-  position: absolute;
-  top: 230px;
-  right: 16px;
-  font-family: "Comic Sans MS", cursive, sans-serif;
-}
-
-.main-header h1 {
-  text-align: center;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  color: black;
-  text-shadow: 2px 2px silver;
-}
-
-.profil {
-  display:inline-block;
-  background-color:white;
-  margin: 10px 0px;
-  color: #3d3d3d;
-  border-radius: 20px;
-  position: relative;
-}
-
-.profil p {
-  font-family:"Trebuchet MS", Helvetica, sans-serif;
-}
-
-.profil h3 {
-  font-family: Lucida Console;
+  margin-bottom: 3px;
 }
 
 .btn-wrapper {
-  position:absolute;
-  right: 15px;
-  top: 160px;
+  margin: 20px 0;
+}
+
+.btn-wrapper p {
+  margin: 10px 0;
+}
+
+.signup {
+  background-color: #239b76;
+}
+
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  opacity: 1;
 }
 
 .fa {
-  padding: 3px;
-  width: 15px;
-  text-align: center;
-  text-decoration: none;
-  float: right;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-    
-    
-}
-
-.fa:hover {
-  opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-  margin-left: 4px;
-  border-radius:50%;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-  margin-left: 4px;
-  border-radius:50%;
-}
-
-.fa-instagram {
-  background: black;
-  color: white;
-  margin-left: 4px;
-  border-radius:50%;
-}
-
-.fa-google {
-  background: red;
-  color: white;
-  margin-left: 4px;
-  border-radius:50%;
-}
-
-/*CSS Additional Menu by Iqbal*/
-* {
-  margin: 0;
-  padding: 0;
-}
-
-#container-menu-tambahan {
-  background: url('attribute/moravian.jpg');
-  background-position: 20px;
-  width: 100%;
-  height: 160px;
-}
-
-#menu-tambahan {
-  width: 100%;
-  height: 200px;
-  background-color: rgb(255, 69, 0, 0.8);
-  text-align: center;
-  font-family: cursive;
-  font-weight: normal;
-  position: relative;
-  display: flex;
-}
-
-#menu-tambahan .content-menu {
-  margin: 20px auto;
-  text-align: center;
-  color: white;
-  display: block;
-  display: block-flex;
-  text-align: center;
-}
-
-.content-menu a {
-  text-decoration: none;
-  display: inline-block;
-  height: 50px;
-  width: 200px;
-  border: 3px solid white;
-  color: antiquewhite;
-  text-align: center;
-  line-height: 50px;
-  margin: 20px auto;
-  border-radius: 50px;
-}
-
-.content-menu a:hover {
-  animation: bottom-contact 0.3s;
-  animation-iteration-count: 1;
-}
-
-@keyframes bottom-contact {
-  33% {
-      margin: 15px auto;
-  }
-
-  66% {
-      margin: 25px auto;
-  }
-
-  100% {
-      margin: 15px auto;
-  }
-}
-
-/*CSS Footer by Noor*/
-.body {
-  font-family: "Avenir Next";
-}
-
-li {
-  list-style: none;
-}
-
-.footer {
-  background: #303036;
-  color: #d3d3d3;
-  height: 210px;
-  position: relative;
-}
-
-.footer .footer-content {
-  height: 210px;
-  display: flex;
-}
-
-.footer .footer-content .footer-section {
-  flex: 1;
-  padding: 10px;
-}
-
-.footer .footer-content h1, .footer .footer-content h2 {
-  color: white;
-  margin: 10px 0px;
-}
-
-.footer .footer-content .about h1 span {
-  color: #05f7ff;
-}
-
-.footer .footer-content .about .contact span {
-  display: block;
-  font-size: 17px;
-  margin-bottom: 2px;
-}
-
-.footer .footer-content .contact-form .socials a {
-  border: 1px solid gray;
-  width: 45px;
-  height: 41px;
-  padding-top: 5px;
   margin-right: 5px;
-  text-align: center;
-  display: inline-block;
-  font-size: 1.9em;
-  border-radius: 5px;
-  transition: all .3s;
 }
 
-.footer .footer-content .contact-form .socials a:hover {
-  border: 1px solid white;
-  color: white;
-  transition: all .3s;
-}
-
-.footer .footer-content .contact-form .contact-input {
-  background: #272727;
-  color: #bebdbd;
-  margin-bottom: 10px;
-  line-height: 1.5rem;
-
-}
-
-.footer-bottom {
-  background: #343a40;
-  color: #686868;
-  height: 40px;
+header {
+  height: 65px;
   width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+  background-color: rgba(34, 49, 52, 0.9);
+  /* Change the position property to fixed, and top property to 0 */
+  position: fixed;
+  top: 0;
+  /* Change the z-index property to 10 */
+  z-index: 10;
+}
+
+.logo {
+  width: 124px;
+  margin-top: 20px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.5s;
+}
+
+.header-right:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+}
+
+.lesson-wrapper {
+  height: 500px;
+  padding-bottom: 80px;
+  background-color: #f7f7f7;
   text-align: center;
+}
+
+.heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: normal;
+}
+
+.lesson {
+  float: left;
+  width: 25%;
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+.lesson-icon p {
   position: absolute;
-  bottom: 0px;
-  left: 0px;
+  top: 90px;
+  width: 100%;
+  color: white;
 }
 
-.footer-bottom p {
-  padding-top: 10px;
-}
-
-.btn{
-  padding: 0.45rem;
+.txt-contents {
+  width: 80%;
   display: inline-block;
-  background-color: #eb3007;
-  border: 2px solid #eb3007;
-  border-radius: 5rem;
-  transition: background-color 650ms;
-  font-size: 10px;
+  margin-top: 20px;
+  font-size: 15px;
+  color: #b3aeb5;
 }
 
-.btn:hover{
-  color: #eb3007;
-  background-color: rgba(0,0,0,.2);
+.heading h3 {
+  font-weight: normal;
+}
+
+.message-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+}
+
+/* Add CSS for message when it's clicked */
+.message:active {
+  box-shadow: none;
+  position: relative;
+  top: 7px;
+}
+
+footer img {
+  width: 125px;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
+
+footer {
+  padding-top: 30px;
 }
